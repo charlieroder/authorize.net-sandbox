@@ -1,4 +1,5 @@
-<!-- This file is used to import sandbox credentials  -->
+<!-- This file is used to store the merchant login ID and merchant 
+transaction key for accessing the sandbox account -->
 <?php
 class CodeConstants
 {
