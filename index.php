@@ -1,6 +1,6 @@
 <html>
 <head>
-<link href="style.css" rel="stylesheet" type="text/css"/ >
+<!-- <link href="style.css" rel="stylesheet" type="text/css"/ > -->
 <title>Authorize.net Payment Gateway Integration using PHP</title>
 </head>
 <body>
@@ -50,9 +50,9 @@
                     <input type="submit" name="pay_now" value="Submit"
                         id="submit-btn" class="btnAction">
 
-                    <div id="loader">
+                    <!-- <div id="loader">
                         <img alt="loader" src="LoaderIcon.gif">
-                    </div>
+                    </div> -->
                 </div>
                 <input type='hidden' name='amount' value='151.51'> 
             </form>
@@ -97,8 +97,8 @@
             
         </table>
     </div>
-    <script src="vendor/jquery/jquery-3.2.1.min.js"
-        type="text/javascript"></script>
+    <!-- <script src="vendor/jquery/jquery-3.2.1.min.js"
+        type="text/javascript"></script> -->
     <script>
 function cardValidation () {
     var valid = true;
