@@ -1,6 +1,9 @@
+<!-- AuthorizeNetPayment class includes methods for completing a payment such as
+setting merchent authentication, setting credit card information, creating a 
+transastion request and finally charging the credit card. --> 
+
 <?php
 require 'vendor/autoload.php';
-require 'constants/code-consants.php';
 use net\authorize\api\contract\v1 as AnetAPI;
 use net\authorize\api\controller as AnetController;
 
@@ -16,7 +19,7 @@ class AuthorizeNetPayment
 
     public function __construct()
     {
-        require_once "config.php";
+        require_once "constants/code-constants.php";
         $this->APILoginId = API_LOGIN_ID;
         $this->APIKey = TRANSACTION_KEY;
         $this->refId = 'ref' . time();

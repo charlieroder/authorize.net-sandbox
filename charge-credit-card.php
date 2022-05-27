@@ -1,3 +1,8 @@
+<!-- method charges a credit card given the amount charged, credit card number
+and credit card expiration date. the method returns weather the transation
+was accepted or failed. The transaction infromation can be added to a database 
+using DBController and the infromation in lines 37 through 54. -->
+
 <?php
 
 require_once "config.php";
@@ -29,6 +34,9 @@ if (!empty($_POST["pay_now"])) {
             $message = "Charge Credit Card ERROR :  Invalid response\n";
         }
         
+        /* 
+        Database not yet set up...
+        
         $transactionId = $tresponse->getTransId();
         $responseCode = $tresponse->getResponseCode();
         $paymentStatus = $authorizeNetPayment->responseText[$tresponse->getResponseCode()];
@@ -45,7 +53,8 @@ if (!empty($_POST["pay_now"])) {
             $paymentResponse
         );
         $query = "INSERT INTO tbl_authorizenet_payment (transaction_id, auth_code, response_code, amount, payment_status, payment_response) values (?, ?, ?, ?, ?, ?)";
-        $id = $dbController->insert($query, $param_type, $param_value_array);
+        $id = $dbController->insert($query, $param_type, $param_value_array); 
+        */
     }
     else
     {
